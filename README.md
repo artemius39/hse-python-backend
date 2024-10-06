@@ -1,7 +1,6 @@
 # Python Backend
 
-- [Репозиторий с примерами](https://github.com/katunilya/hse-python-backend) -
-  вы уже тут
+- [Репозиторий с примерами](https://github.com/katunilya/hse-python-backend)
 - [Лекции в
 Miro](https://miro.com/app/board/uXjVKkM4JvE=/?share_link_id=92562179702) (все
 лекции будут постепенно заливаться в эту доску)
