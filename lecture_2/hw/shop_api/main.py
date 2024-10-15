@@ -4,6 +4,7 @@ from typing import List, Optional, Dict
 
 from fastapi import FastAPI, HTTPException, Query, Response
 from pydantic import BaseModel
+from prometheus_fastapi_instrumentator import Instrumentator
 
 
 class Item(BaseModel):
@@ -49,6 +50,7 @@ class UpdateItemRequest(BaseModel):
 
 
 app = FastAPI(title="Shop API")
+Instrumentator().instrument(app).expose(app)
 
 items_map: Dict[int, Item] = {}
 cart_map: Dict[int, Cart] = {}
